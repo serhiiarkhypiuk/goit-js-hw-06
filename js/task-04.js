@@ -7,11 +7,13 @@ const increaseButton = document.querySelector("button[data-action='increment']")
 const increaseCounterValue = () => {
     counterValue++
     pageValue.innerHTML = counterValue
+    console.log('click!')
 }
 
 const decreaseCounterValue = () => {
     counterValue--
     pageValue.innerHTML = counterValue
+    console.log('click!')
 }
 
 increaseButton.addEventListener("click", increaseCounterValue)

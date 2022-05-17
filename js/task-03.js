@@ -21,7 +21,7 @@ galleryStyle.style.listStyle = "none"
 
 
 const markup = images
-  .map((image) => `<li><img src="${image.url}" alt="${image.alt}"></img></li>`)
+  .map((image) => `<li><img width="1260px" height="750px" src="${image.url}" alt="${image.alt}"></img></li>`)
   .join("")
 
 document.querySelector("ul.gallery").insertAdjacentHTML("beforeend", markup)
