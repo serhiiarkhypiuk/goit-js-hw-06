@@ -10,7 +10,7 @@ const handleSubmit = (event) => {
         return alert("Any input field can't be empty!")
     }
 
-    console.log(`Email: ${email.value}, Password: ${password.value}`)
+    console.log({ [email.name]: email.value, [password.name]: password.value })
     event.currentTarget.reset()
 }
 
